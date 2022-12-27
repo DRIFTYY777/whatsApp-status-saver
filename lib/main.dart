@@ -116,6 +116,9 @@ class Abc extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     ElevatedButton(
+                      onLongPress: () {
+                        eatItSnackBar(context, "Just Click it Man");
+                      },
                       child: const Text("Click"),
                       onPressed: () {
                         still(context);
